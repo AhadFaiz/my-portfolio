@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ahad Faiz - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ahad Faiz
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          AhadFaizM@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +966556150535
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="mylogo.jpeg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Ahad Faiz! 
+          </h1> 
+          <p>
+            I am a Computer Information Systems (CIS) student with a foundational knowledge of web development.
+             I am interested in pursuing a career in full stack development, where I can leverage my skills in both front-end and back-end technologies to create dynamic and efficient web applications.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1-2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>0-1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="python.webp"/>
+          <h6>python</h6>
+          <p>1-2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="database.webp"/>
+          <h6>Database</h6>
+          <p>2-3 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="data visualisation.jpg"/>
+          <h6>Data Visualisation</h6>
+          <p>0-1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="css.png"/>
+          <h6>CSS</h6>
+          <p>2-3 years experience</p>
+        </div> 
+
+       <div class="skill">
+        <img src="java.png"/>
+        <h6>Java</h6>
+        <p>1-2 years of experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="c++.png"/>
+          <h6>C++</h6>
+          <p>1-2 years of experience</p>
+          </div>
+  
+
+      
+
+
+      </div>
+    </section>
+          
+<!-- Projects -->
+<section class="projects" id="projects">
+  <h2>
+    Projects
+  </h2>
+  <div style="clear:both;"></div>
+
+  <div id="projects-container" class="projects-container">
+    <div class="project-card">
+      <h3>Cinema Management System (Java) - Group Project</h3>
+      <ul>
+        <li>Developed a cinema management application using Java, allowing users to book tickets, view movie schedules, and manage user accounts.</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="project-card">
+      <h3>Cinema Inventory System (C++) - Group Project</h3>
+      <ul>
+        <li>Created a cinema inventory management system using C++, enabling efficient tracking of movie inventory and ticket sales.</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="project-card">
+      <h3>Data Visualization Dashboard - Individual Project</h3>
+      <ul>
+        <li>Created an interactive data visualization dashboard using Tableau to analyze sales data, enabling stakeholders to make data-driven decisions.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div style="clear:both;"></div>
+ <!-- Recommendations -->
+<section id="recommendations">
+  <h2>Recommendations</h2>
+  <div style="clear:both;"></div>
+  <div class="all_recommendations" id="all_recommendations">
+    <div class="recommendation">
+      <span>&#8220;</span>
+      Ahad has a remarkable ability to grasp new concepts quickly. His dedication to full-stack development is evident in his projects, combining both front-end and back-end technologies seamlessly.
+      <span>&#8221;</span>
+    </div>
+    <div class="recommendation">
+      <span>&#8220;</span>
+      Collaborating with Ahad on our class project was a great experience. His enthusiasm for iOS development inspired the team, and his problem-solving skills were crucial to our success.
+      <span>&#8221;</span>
+    </div>
+    <div class="recommendation">
+      <span>&#8220;</span>
+      I highly recommend Ahad for any development role. His passion for technology and continuous learning make him a valuable asset. His work ethic and creativity are truly commendable!
+      <span>&#8221;</span>
+    </div>
+  </div>
+</section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+
+      </a>
+    </div>
+
+    <div class="popup" id="popup" style="visibility:hidden;" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"alt="Checkmark"/>
+      <h3>Recommendation Added Successfully!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
